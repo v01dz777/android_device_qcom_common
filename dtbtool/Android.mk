@@ -1,3 +1,4 @@
+ifndef USE_CUSTOM_DTBTOOL
 ifeq ($(BOARD_KERNEL_SEPARATED_DT),true)
 LOCAL_PATH := $(call my-dir)
 
@@ -14,4 +15,5 @@ LOCAL_MODULE := dtbToolCM
 LOCAL_MODULE_TAGS := optional
 
 include $(BUILD_HOST_EXECUTABLE)
+endif
 endif

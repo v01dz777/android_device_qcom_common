@@ -13,10 +13,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ifndef DEVICE_NO_QCOM_COMMON
 ifneq (,$(filter $(QCOM_BOARD_PLATFORMS),$(TARGET_BOARD_PLATFORM)))
 
 include $(all-subdir-makefiles)
 
-endif
 endif
